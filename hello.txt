@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 hai
 buddy
 
+=======
+rns
+com
+app
+>>>>>>> fa177135fa6f7e2ab4a0b8e659361212f3dee75a
