@@ -171,12 +171,12 @@
   <repository>
      <id>deployment</id>
      <name>Internal Releases</name>
-     <url>http://localhost:8080/nexus-2.11.4-01/content/repositories/releases/</url>
+     <url>http://localhost:8090/nexus-2.11.4-01/content/shadows/central-m1/</url>
   </repository>
   <snapshotRepository>
      <id>deployment</id>
      <name>snapshot </name>
-     <url>http://localhost:8080/nexus-2.11.4-01/content/repositories/snapshots/</url>
+     <url>http://localhost:8090/nexus-2.11.4-01/content/repositories/codehaus-snapshots/</url>
   </snapshotRepository>
 </distributionManagement>
   
