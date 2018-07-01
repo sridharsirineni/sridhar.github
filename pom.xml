@@ -20,7 +20,7 @@
   </build>
   <distributionManagement>
   <repository>
-     <id>deploiyment</id>
+     <id>deployment</id>
      <name>Internal Releases</name>
      <url>http://localhost:8090/nexus-2.11.4-01/content/repositories/releases/</url>
   </repository>
