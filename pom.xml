@@ -27,7 +27,7 @@
   <snapshotRepository>
      <id>deployment</id>
      <name>snapshot </name>
-     <url>http://192.168.187.183:8090/nexus-2.11.4-01/content/repositories/snapshots/</url>
+     <url>http://localhost:8090/nexus-2.11.4-01/content/repositories/snapshots/</url>
   </snapshotRepository>
 </distributionManagement>
 </project>
