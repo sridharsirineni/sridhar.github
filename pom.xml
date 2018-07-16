@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.rns.app</groupId>
-  <artifactId>simple-webapp</artifactId>
+  <artifactId>webapp</artifactId>
   <packaging>war</packaging>
   <version>1.0</version>
   <name>simple-webapp Maven Webapp</name>
@@ -18,16 +18,4 @@
   <build>
     <finalName>simple-webapp</finalName>
   </build>
-   <distributionManagement>
-  <repository>
-     <id>deployment</id>
-     <name>Internal Releases</name>
-     <url>http://192.168.187.138:8090/nexus-2.11.4-01/content/repositories/releases/</url>
-  </repository>
-  <snapshotRepository>
-     <id>deployment</id>
-     <name>snapshot </name>
-     <url>http://192.168.187.138:8090/nexus-2.11.4-01/content/repositories/snapshots/</url>
-  </snapshotRepository>
-</distributionManagement>
 </project>
