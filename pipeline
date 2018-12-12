@@ -1,0 +1,14 @@
+node
+{
+    stage ('SCM Check')
+    {
+        git 'https://github.com/sridharsirineni/sridhar.github.git'
+    }
+    stage('MVN Package')
+    {
+        def maven = tool name: 'maven_home', type: 'maven'
+        sh "${maven}/bin/mvn clean package"
+    }
+    
+    
+}
