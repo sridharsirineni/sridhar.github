@@ -26,8 +26,8 @@ node {
         sh "${scannerHome}/bin/sonar-scanner -e -Dsonar.projectName=mavenproject -Dsonar.projectKey=webapp -Dsonar.sources=src -Dsonar.java.binaries=target/"
       }
    }
-   stage('Publish') {i
-     nexusPublisher nexusInstanceId: 'NexusServer', nexusRepositoryId: '1.0-SNAPSHOT', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: '**/target/*.war']], mavenCoordinate: [artifactId: 'webapp', groupId: 'com.rns.app', packaging: 'war', version: '2.23']]]
+   stage('Publish') {
+     nexusPublisher nexusInstanceId: 'NexusServer', nexusRepositoryId: '1.0-SNAPSHOT', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: '**/target/*.war']], mavenCoordinate: [artifactId: 'webapp', groupId: 'com.rns.app', packaging: 'war', version: '4.0.0']]]
    }
 
  }
