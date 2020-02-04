@@ -21,10 +21,6 @@ node {
       sh "'${mvnHome}/bin/mvn' test surefire-report:report"
    }
 
-#   stage('Results') {
- #     junit '**/target/surefire-reports/TEST-*.xml'
-  #    archive 'target/*.jar'
-   #}
    stage('Sonar Code Analysis') {
       withSonarQubeEnv('SonarQubeServer') {
         sh "${scannerHome}/bin/sonar-scanner -e -Dsonar.projectName=mavenproject -Dsonar.projectKey=webapp -Dsonar.sources=src -Dsonar.java.binaries=target/"
