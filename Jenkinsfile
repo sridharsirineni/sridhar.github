@@ -27,7 +27,7 @@ node {
       }
    }
    stage('Publish') {
-     nexusPublisher nexusInstanceId: 'NexusServer', nexusRepositoryId: '1.0-SNAPSHOT', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'sridhar.github/target/webapp.war']], mavenCoordinate: [artifactId: 'webapp', groupId: 'com.rns.app', packaging: 'war', version: '4.0.0']]]
+     nexusPublisher nexusInstanceId: 'NexusServer', nexusRepositoryId: '1.0-SNAPSHOT', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: '$JOB_NAME/target/webapp.war']], mavenCoordinate: [artifactId: 'webapp', groupId: 'com.rns.app', packaging: 'war', version: '4.0.0']]]
    }
 
  }
