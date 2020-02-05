@@ -27,7 +27,7 @@ node {
       }
    }
    stage('Publish') {
-     sh "mvn clean deploy
+     sh "mvn clean deploy"
    }
 
  }
