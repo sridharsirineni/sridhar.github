@@ -4,7 +4,7 @@
   <groupId>com.anblicks.app</groupId>
   <artifactId>webapp</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>SNAPSHOT-1.2.${v}-</version>
   <name>webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
