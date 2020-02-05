@@ -27,7 +27,7 @@ node {
       }
    }
    stage('Publish') {
-     sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean deploy
+     sh "mvn clean deploy
    }
 
  }
