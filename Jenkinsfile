@@ -26,7 +26,7 @@ node {
         sh "${scannerHome}/bin/sonar-scanner -e -Dsonar.projectName=mavenproject -Dsonar.projectKey=webapp -Dsonar.sources=src -Dsonar.java.binaries=target/"
       }
    }
-   stage('Publish') {
+   stage('Deploy Artifacts on NexusServer') {
      sh "mvn clean deploy"
    }
 
